@@ -1,5 +1,6 @@
 # 8088
 Intel 8088 based Single Board Computer (SBC).
+
 The goal of this repo is to share my emperiments with the 8088 microprocessor.
 I've built a simple board using the 8088 at 4.77MHz and:
 - a 8255 PPI.
