@@ -56,10 +56,10 @@ http://www.retroarchive.org/dos/docs/
 
 
 * Build your own computer : how to construct an 8088 based single board microcomputer
-	Walter Fuller
+	 - by Walter Fuller
 
 * The 8088 Project Book 
-Robert Grossblatt
+ - by Robert Grossblatt
 
 * THE 80X86 IBM PC and Compatible Computers: Assembly Language, Design and Interfacing 
-Muhammad Ali Mazidi
+ - by Muhammad Ali Mazidi
