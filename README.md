@@ -41,11 +41,7 @@ http://helmpcb.com/electronics/8088-computer
 
 http://www.cs.binghamton.edu/~reckert/sbc.htm
 
-http://technologyinterface.nmsu.edu/fall98/electronics/zargari/zargari.html
-
 http://sasteven.multics.org/8088page.html
-
-http://neazoi.com/microwave/giannopk/computer.htm
 
 http://www.malinov.com/Home/sergeys-projects/sergey-s-xt
 
