@@ -10,7 +10,7 @@ The drawback is the relative complexity of the circuit (compared to other uPs li
 
 I've built a simple board using the 8088 in MIN MODE @ 4.77MHz with only a couple of ICs:
    - 8284 Clock generator.
-   - Two 74LS374 for address demultiplexing.
+   - Two 74LS373 for address demultiplexing.
    - a 7404 for address decoding.
    - a 8255 PPI.
    - 8K ROM  (AT28C64B CMOS).
