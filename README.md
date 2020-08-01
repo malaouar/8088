@@ -34,6 +34,7 @@ for any suggestions: malaouar67@gmail.com
 
 
 =========================================================
+
 Resources:
 
 http://helmpcb.com/electronics/8088-computer
