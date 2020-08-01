@@ -1,6 +1,6 @@
 Intel 8088 based Single Board Computer (SBC).
 
-The goal of this repo is to share my emperiments with the 8088 microprocessor.
+The goal of this repo is to share my experiments with the 8088 microprocessor.
 
 Why the 8088?
 It's the uP at the heart of the first PC in history produced by IBM in 1981 (PC5150) and it's successor the PC-XT.
