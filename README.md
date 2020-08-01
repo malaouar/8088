@@ -55,11 +55,8 @@ http://www.8051bits.com/misc-projects/rit-8088/rit-8088.html
 http://www.retroarchive.org/dos/docs/
 
 
-* Build your own computer : how to construct an 8088 based single board microcomputer
-	 - by Walter Fuller
+* Build your own computer : how to construct an 8088 based single board microcomputer  by Walter Fuller
 
-* The 8088 Project Book 
- - by Robert Grossblatt
+* The 8088 Project Book   by Robert Grossblatt
 
-* THE 80X86 IBM PC and Compatible Computers: Assembly Language, Design and Interfacing 
- - by Muhammad Ali Mazidi
+* THE 80X86 IBM PC and Compatible Computers: Assembly Language, Design and Interfacing   by Muhammad Ali Mazidi
