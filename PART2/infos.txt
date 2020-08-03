@@ -1,0 +1,45 @@
+enhanced Minimal 8088 based Board.
+
+ Only 8 ICs: 8088 + 8284, PPI (8255), 74LS139, two 74LS373, RAM and EEROM.
+ I've a 512k byte SRAM but u can use any available chip, higher capcity = better.
+
+The simplified schematic is given in photo "schem1.jpg". 
+more details about address decoding in "decoder.jpg".
+
+- Address lines A0-A8 and A6-A19 are demultiplexed using two 74LS373 latchs.
+- ADDRESS and DATA buses are not buffered.
+- We use IO/M and A19 lines with the 74LS139 to select the ROM, RAM or the PPI (by pulling the CE pin low):
+  *if IO/M is LOW the ROM  or RAM is selected.
+  A19 HIGH ==> ROM selected.
+  A19 LOW  ==> RAM selected.
+  *if IO/M is HIGH the PPI is selected (whatever the state of A19 is).
+
+- The circuit must be powered by a regulated 5V supply @ 0.5A or more.
+
+SOFTWARE:
+
+PROGRAM1- SD.asm: a program to copy one sector to another.
+  The SD is accessed in SPI mode using a software bit-bang SPI master.
+  
+  SD CARD     PORTC 
+    MISO       C0 
+    CLK        C4    via 2.2k resitor
+    CS         C5    via 4.7k resitor
+    MOSI       C7    via 4.7k resitor
+
+The SD card is powered with a 3.3V regulator.
+
+Note: We use the PC and an SD card reader/writer to write data to a sector on the SD.
+
+
+PROGRAM2- N3410.asm: a program to innitialize the LCD and draw text.
+  The LCD is commanded in SPI mode using a software bit-bang SPI master.
+  
+	N3410 LCD     PORTC 
+       DC          C1
+	   CE          C3
+       CLK         C4    via 2.2k resitor
+       RST         C5    via 4.7k resitor
+       DATA        C7    via 4.7k resitor
+	
+The LCD is powered with a 3.3V regulator.
