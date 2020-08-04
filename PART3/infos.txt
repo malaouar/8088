@@ -1,0 +1,28 @@
+
+HARDWARE:
+
+1- PS2 keyboard:
+connect the adaptor to the board as in "schem.jpg".
+You may need pull-up resistors on CLK and DATA lines.
+When using interrupt, The CLK signal is used to fire the NMI interrupt through a 1ms monostable as shown in "NMI.jpg".
+
+2- VGA:
+ An ATMEGA8 is used to generate VGA signals in 640x480 mode and display text with auto scroll up. 
+ This work is inspired by many projects in the web:
+ 
+http://sbc.rictor.org/vid2c.html
+http://tinyvga.com/avr-vga
+
+
+SOFTWARE:
+
+PROGRAM1- KB1.asm: a program to read scan code of a pressed key and display it on a 7 segment display.
+PROGRAM2- KB2.asm: same as above but it uses the NMI interrupt.
+
+
+A simple OS:
+ - BIOS: functions to display text on VGA, read keyboard, access SD card ....
+ - FAT16 bootloader
+ - Kernel (in binary format)
+ - Some apps.
+ 
